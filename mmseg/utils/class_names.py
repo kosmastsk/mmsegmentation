@@ -473,6 +473,18 @@ def bdd100k_palette():
             [0, 0, 230], [119, 11, 32]]
 
 
+def bdd100kdrivable_classes():
+    """BDD100KDrivable class names for external use(the class name is compatible with
+    Cityscapes )."""
+    return [
+        'drivable', 'alternative', 'background'
+    ]
+
+
+def bdd100kdrivable_palette():
+    """bdd100kdrivable palette for external use(same with cityscapes)"""
+    return [[86, 94, 219], [219, 211,  86], [0, 0,  0]]
+
 dataset_aliases = {
     'cityscapes': ['cityscapes'],
     'ade': ['ade', 'ade20k'],
@@ -491,7 +503,8 @@ dataset_aliases = {
     'lip': ['LIP', 'lip'],
     'mapillary_v1': ['mapillary_v1'],
     'mapillary_v2': ['mapillary_v2'],
-    'bdd100k': ['bdd100k']
+    'bdd100k': ['bdd100k'],
+    'bdd100kdrivable': ['bdd100kdrivable']
 }
 
 

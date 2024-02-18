@@ -2,6 +2,7 @@
 # yapf: disable
 from .ade import ADE20KDataset
 from .basesegdataset import BaseCDDataset, BaseSegDataset
+from .bdd100k_drivable import BDD100KDrivableDataset
 from .bdd100k import BDD100KDataset
 from .chase_db1 import ChaseDB1Dataset
 from .cityscapes import CityscapesDataset
