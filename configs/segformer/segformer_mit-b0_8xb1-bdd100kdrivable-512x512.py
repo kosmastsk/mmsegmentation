@@ -9,8 +9,13 @@ checkpoint = 'https://download.openmmlab.com/mmsegmentation/v0.5/pretrain/segfor
 model = dict(
     data_preprocessor=data_preprocessor,
     backbone=dict(init_cfg=dict(type='Pretrained', checkpoint=checkpoint)),
-    test_cfg=dict(mode='slide', crop_size=(512, 512), stride=(768, 768)))
+    test_cfg=dict(mode='slide', crop_size=(512, 512), stride=(256, 256)))
 
+# model = dict(
+#     data_preprocessor=data_preprocessor,
+#     backbone=dict(init_cfg=dict(type='Pretrained', checkpoint=checkpoint)),
+#     decode_head=dict(num_classes=3))
+    
 optim_wrapper = dict(
     _delete_=True,
     type='OptimWrapper',
